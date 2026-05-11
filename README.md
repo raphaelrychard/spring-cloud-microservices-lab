@@ -112,7 +112,6 @@ This project simplifies microservices development and deployment with a focus on
 | [mvnw](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.main/mvnw) | Initiate Apache Maven Wrapper setup script to download and install Maven distribution based on specified configurations. |
 | [Dockerfile](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.main/Dockerfile) | Create a Docker image for the main service by building and packaging the application using Maven. Exposes the service on port 8888. |
 | [Application.java](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.main/src/main/java/com/raphaelrychard/service/main/Application.java) | Enable Eureka and Config servers for the main service application. Initializes the Spring Boot application for service registration, discovery, and centralized configuration management. |
-| [ApplicationTests.java](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.main/src/test/java/com/raphaelrychard/service/main/ApplicationTests.java) | Ensure application context loads successfully during testing in the service.main module. |
 
 </details>
 
@@ -132,10 +131,8 @@ This project simplifies microservices development and deployment with a focus on
 | [TaskNotificationSchedule.java](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.task/src/main/java/com/raphaelrychard/service/tasks/TaskNotificationSchedule.java) | Schedule task notifications for due tasks in the service architecture. |
 | [TasksRepository.java](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.task/src/main/java/com/raphaelrychard/service/tasks/TasksRepository.java) | Define a repository interface for managing tasks with deadlines. Retrieves tasks due within a specified deadline, filtering out those already notified. |
 | [TaskRequest.java](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.task/src/main/java/com/raphaelrychard/service/tasks/TaskRequest.java) | Define a data structure for Task requests with title, email, due date, and notification status. |
-| [TaskService.java](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.task/src/main/java/com/raphaelrychard/service/tasks/TaskService.java) | Implement a service that sends notifications for tasks nearing their deadline. Retrieves due tasks from the repository, crafts notifications, sends them via a client, and updates task status. |
 | [NotificationRequest.java](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.task/src/main/java/com/raphaelrychard/service/tasks/NotificationRequest.java) | Define a data structure for handling notification requests with message and email fields. |
 | [Application.java](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.task/src/main/java/com/raphaelrychard/service/tasks/Application.java) | Initialize Spring Boot application with Feign clients and scheduling capabilities. |
-| [ApplicationTests.java](https://github.com/raphaelrychard/spring-cloud-microservices-lab/blob/master/service.task/src/test/java/com/raphaelrychard/service/tasks/ApplicationTests.java) | Ensure application context loads successfully during testing in the service.task module. |
 
 </details>
 
