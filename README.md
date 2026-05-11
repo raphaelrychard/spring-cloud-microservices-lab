@@ -18,7 +18,6 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Testing](#testing)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
@@ -47,7 +46,6 @@ This project simplifies microservices development and deployment with a focus on
 | 📄 **Documentation** | Well-documented Docker setup in docker-compose.yaml, individual service Dockerfiles for clarity |
 | 🔌 **Integrations** | Integration with Spring Cloud Config Server for externalized configuration, inter-service communication using Feign clients |
 | 🧩 **Modularity** | Each service encapsulates specific business logic, clear separation of concerns between services |
-| 🧪 **Testing** | Unit tests for critical business logic in each service, integration tests for service interactions |
 | ⚡️ **Performance** | Optimized service-to-service communication, caching strategies implemented for improved response times |
 | 🛡️ **Security** | Secure communication between services using HTTPS, role-based access control implemented |
 | 📦 **Dependencies** | Utilizes Spring Cloud dependencies for cloud-native features, Java-based dependencies managed via Maven |
@@ -210,14 +208,4 @@ Using [Maven](https://maven.apache.org/):
 
 ```sh
 mvn exec:java
-```
-
-### Testing
-
-Run the test suite with:
-
-Using [Maven](https://maven.apache.org/):
-
-```sh
-mvn test
 ```
